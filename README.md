@@ -10,8 +10,8 @@ This is because in quantum mechanics, measuring a quantum system destroys the su
 ## Methods 
 Our code uses the IBM software kit Qiskit. The circuit is composed of the evolution of the qubit through a series of U-Gates and CNOT gates that are controlled by the qubit in the 0 position. This circuit has 10 steps and measures the original qubit after the circuit has ended.
 
-![Circuit Diagram]
-()
+![Circuit Diagram](https://github.com/user-attachments/assets/9d141d76-b6f9-4b11-8571-65b44b0038c9)
+
 
 ## Our Code
 The paper discusses a quantum circuit designed to demonstrate the Quantum Zeno Effect, where repeated measurements prevent the evolution of a qubit's state. The circuit consists of 10 steps involving a combination of U-gates and CNOT gates, controlled by the qubit in position q0. The U-gates rotate the qubit’s state by a phase of π/10 on the Bloch sphere, preserving the state through unitary operations, while the CNOT gates entangle q0 with target qubits (q1 to q0). At each step, the CNOT gate acts like a measurement, preventing the evolution of q0 by collapsing it into a single state. The final measurement after all steps shows that most qubits remain in the 0 state, consistent with the Quantum Zeno Effect. If you look through our code, you can see the visualization of the circuit, created using the q_evolve.draw("mpl") function, which highlights how the repeated application of CNOT gates stabilizes the qubit’s state.
