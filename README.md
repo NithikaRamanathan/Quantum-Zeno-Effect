@@ -20,7 +20,8 @@ The paper discusses a quantum circuit designed to demonstrate the Quantum Zeno E
 
 The results depicted in the bar graph show that the majority of qubits remained in the 0 state. This is representative of the the Quantum Zeno Effect because as more measurements are taken, the state of the qubit should be collapsed into one state.
 
-![Bar Graph of Qubit States Measured](https://github.com/user-attachments/assets/2f53f702-77ff-4b66-a216-13233297714b)
+![Bar Graph of Qubit States](https://github.com/user-attachments/assets/7da9de81-9299-40c7-814f-997ca10c020c)
+
 
 The graph of the evolution of the state of the qubit with and without the Zeno Effect demonstrates that without repeated measurements, the qubit's state evolves from 1 to 0 with each rotation gate. With the measurements, the qubit is essentially frozen at 1, even with the rotation gates being applied. The freezing of the qubit's state with repeated measurements indicates that the Quantum Zeno Effect is being applied here.
 
