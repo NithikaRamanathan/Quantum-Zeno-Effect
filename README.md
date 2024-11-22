@@ -27,6 +27,10 @@ The graph of the evolution of the state of the qubit with and without the Zeno E
 
 ![Graph of Evolution of State With and Without Zeno Effect](https://github.com/user-attachments/assets/b38894c3-c7ad-4f1a-a6b0-c3939ef43bbd)
 
+## Conclusion
+
+We were able to recreate the results of the paper to show that you can create a Zeno-like effect in a quantum system by continuous coupling to external qubits using the CNOT gate. Studying the quantum Zeno effect is important because it could help solve the problem of quantum decoherence, which is when quantum systems lose coherence by interacting with their environment. It is possible that the quantum zeno effect could be utilized to reduce decoherence and keep qubits in the state we want them in for as long as possilbe Potential future research could include looking at whcich other gates have similar effects as the CNOT gate did in our experiment, and finding how effective each one is. It could also include using the QZE on a system with more than one qubit.
+
 
 ## Credits
 Modified code from: https://medium.com/qiskit/the-quantum-zeno-effect-from-motionless-arrows-to-entangled-freezers-e93beb7d52ae#:~:text=Here%20is%20an%20intuitive%20explanation,even%20multi%2Dqubit%20entangled%20states by Maria Violaris
