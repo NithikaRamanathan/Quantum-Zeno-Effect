@@ -16,5 +16,16 @@ Our code uses the IBM software kit Qiskit. The circuit is composed of the evolut
 ## Our Code
 The paper discusses a quantum circuit designed to demonstrate the Quantum Zeno Effect, where repeated measurements prevent the evolution of a qubit's state. The circuit consists of 10 steps involving a combination of U-gates and CNOT gates, controlled by the qubit in position q0. The U-gates rotate the qubit’s state by a phase of π/10 on the Bloch sphere, preserving the state through unitary operations, while the CNOT gates entangle q0 with target qubits (q1 to q0). At each step, the CNOT gate acts like a measurement, preventing the evolution of q0 by collapsing it into a single state. The final measurement after all steps shows that most qubits remain in the 0 state, consistent with the Quantum Zeno Effect. If you look through our code, you can see the visualization of the circuit, created using the q_evolve.draw("mpl") function, which highlights how the repeated application of CNOT gates stabilizes the qubit’s state.
 
+## Results
+
+The results depicted in the bar graph show that the majority of qubits remained in the 0 state. This is representative of the the Quantum Zeno Effect because as more measurements are taken, the state of the qubit should be collapsed into one state.
+
+![Bar Graph of Qubit States Measured](https://github.com/user-attachments/assets/2f53f702-77ff-4b66-a216-13233297714b)
+
+The graph of the evolution of the state of the qubit with and without the Zeno Effect demonstrates that without repeated measurements, the qubit's state evolves from 1 to 0 with each rotation gate. With the measurements, the qubit is essentially frozen at 1, even with the rotation gates being applied. The freezing of the qubit's state with repeated measurements indicates that the Quantum Zeno Effect is being applied here.
+
+![Graph of Evolution of State With and Without Zeno Effect](https://github.com/user-attachments/assets/fa3641a9-486e-4277-a049-4f166c3f0bb1)
+
+
 ## Credits
 Modified code from: https://medium.com/qiskit/the-quantum-zeno-effect-from-motionless-arrows-to-entangled-freezers-e93beb7d52ae#:~:text=Here%20is%20an%20intuitive%20explanation,even%20multi%2Dqubit%20entangled%20states by Maria Violaris
